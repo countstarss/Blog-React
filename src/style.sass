@@ -1,0 +1,411 @@
+$lightGrenn: #b9e7e7
+body
+  margin: 0
+  padding: 0
+.app
+  
+  display: flex
+  justify-content: center
+  
+
+  .auth-container
+    width: 1024px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 100vh
+    background-color: $lightGrenn
+
+    .auth
+      width: 220px
+      height: 280px
+      padding: 30px
+      background-color: white
+
+    .auth-register
+      width: 220px
+      height: 330px
+      padding: 30px
+      background-color: white
+
+    .login
+      color: teal
+      
+    .form
+      display: flex
+      flex-direction: column
+      gap: 20px
+
+      input
+        border: none
+        border-bottom: 1px solid gray
+        outline: none
+        line-height: 25px
+      button
+        width:100%
+        height: 30px
+        color: gray
+        border: none
+        border: 1px solid $lightGrenn
+      p
+        align-content: center
+        text-align: center
+      .link
+            text-decoration: none
+            color: indigo
+            cursor: pointer
+
+    
+
+
+  // Navbar
+  .Navbar
+    .box
+      width: 100%
+      display: flex
+      justify-content: space-between
+
+      .logo
+        flex: 1
+        img
+          width: 120px
+          height: 120px
+          border-radius: 50%
+
+      .links
+        display: flex
+        flex: 1
+        gap: 10px
+        align-items: center
+
+        .link
+          display: flex
+          color: gray
+          gap: 10px
+          text-decoration: none
+
+          h6
+            margin-left: 20px
+            font-size: 14px
+            font-weight: 450
+            text-decoration: none
+            
+
+            // line-height: 100%
+        span
+          cursor: pointer
+          text-decoration: none
+        .write
+          background-color: $lightGrenn
+          width: 50px
+          height: 50px
+          border-radius: 50%
+          display: flex
+          justify-content: center
+          align-items: center
+          font-weight: 450
+          color: white
+          border: 1px solid white
+            
+
+          &:hover
+            background-color: white
+            border: 1px solid $lightGrenn
+            color: $lightGrenn
+
+        .name
+          font-size: 18px
+          font-weight: 450px
+
+  //Footer
+  footer
+    width: 100%
+    // height: 150px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $lightGrenn
+    // position: fixed
+    // bottom: 0
+    margin-top: 50px
+    img
+      width: 70px
+      height: 70px
+      border-radius: 50%
+      padding: 10px
+    p
+      text-align: center
+      // line-height: 120px
+      font-size: 16px
+      font-weight: 400
+      margin-right: 20px
+
+  //Home
+  .home
+    display: flex
+    justify-content: center
+
+    .posts
+      margin-top: 50px
+      width: 1024px
+      display: flex
+      flex-direction: column
+      gap: 150px
+
+      .post
+        display: flex
+        flex-direction: row
+        gap: 100px
+
+        &:nth-child(2n+1)
+          flex-direction: row-reverse
+          
+      .link
+        text-decoration: none
+        color: black
+
+      .img
+        flex: 2
+        background-color: $lightGrenn
+        max-height: 300px
+        position: relative
+
+        img
+          width: 100%
+          max-height: 100%
+          object-fit: cover
+          
+        .shadow
+          height: 100%
+          width: 100%
+          background-color: $lightGrenn
+          position: absolute
+          top: 15px
+          left: -15px
+          z-index: -1
+          
+      .content
+        flex: 3
+        height: 100%
+        position: relative
+        .text
+          width: 100%
+          font-size: 40px
+          word-wrap: break-word
+          margin-top: 0
+          // overflow-wrap: break-word
+        button
+          // width: 100%
+          max-width: max-content
+          padding: 10px 20px
+          border: none
+          cursor: pointer
+          background-color: white
+          border: 1px solid teal
+          color: teal
+          border-radius: 5px
+          position: absolute
+          bottom: 0
+
+          &:hover
+            background-color: $lightGrenn
+            border: 1px solid white
+            color: black
+  // Single
+  .single
+    width: 1024px
+    display: flex
+    justify-content: center
+    gap: 50px
+    .content
+      margin-top: 30px
+      flex: 5
+      display: flex
+      flex-direction: column
+      gap: 15px
+      img
+        width: 100%
+        height: 300px
+        object-fit: cover
+      .user
+        display: flex
+        align-items: center
+        gap: 15px
+        font-size: 14px
+        .info
+          display: flex
+          flex-direction: column
+          vertical-align: center
+
+        .edit
+          display: flex
+          gap: 5px
+          color: white
+          .edit-edit
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            background-color: teal
+          .edit-delete
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            background-color: indigo
+
+        img
+          width: 50px
+          height: 50px
+          border-radius: 50%
+          object-fit: cover
+        span
+          font-weight: bold
+        p
+          margin: 0
+          line-height: 20px
+        h1
+          color: #333
+          font-size: 42px
+    .menu
+      flex: 2
+      display: flex
+      flex-direction: column
+      gap: 25px
+      h1
+        font-size: 20px
+        color: #555
+      img
+        width: 100%
+        object-fit: cover
+      .post
+        color: #555
+        h2
+          font-size: 20px
+        button
+          width: max-content
+          border: none
+          padding: 10px
+          cursor: pointer
+          background-color: white
+          border: 1px solid teal
+          color: teal
+          border-radius: 2px
+
+          &:hover
+            background-color: $lightGrenn
+            border: 1px solid black
+            color: black
+  //Write
+  .add
+    width: 1024px
+    margin-top: 20px
+    display: flex
+    gap: 20px
+    // height: 67.5vh
+
+    .content
+      flex: 5
+      display: flex
+      flex-direction: column
+      gap: 20px
+
+      input
+        padding: 10px
+        border: 1px solid #c3c3c3
+        outline: none
+    .editoeContainer
+      height: 400px
+      overflow: scroll
+      position: relative
+      // border-bottom: 1px solid #888
+
+      &::-webkit-scrollbar
+        display: none
+
+      .editor
+        position: absolute
+        top: 0px
+        height: 89%
+        width: 100%
+        border: none
+
+    .menu
+      flex: 2
+      display: flex
+      flex-direction: column
+      gap: 15px
+
+      .item
+        border: 1px solid #c3c3c3
+        padding: 10px
+        flex: 1
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        font-size: 14px
+        color: #555
+
+        h1
+          font-size: 20px
+
+        label
+          text-decoration: none
+        
+        span 
+          margin: 0
+        .upload
+          text-align: center
+          width: 95px
+          padding: 3px 5px 
+          border: 1px solid teal
+        .buttons
+          display: flex
+          justify-content: space-between
+          :first-child
+            cursor: pointer
+            color: teal
+            background-color: white
+            border: 1px solid teal
+            padding: 5px 8px
+          :last-child
+            cursor: pointer
+            color: white
+            background-color: teal
+            border: 1px solid white
+            padding: 5px 8px
+
+        .cat
+          display: flex
+          align-items: center
+          color: teal
+
+
+
+
+    
+  
+
+
+          
+
+
+
+    
+
+        
+
+
+
+
+          
+
+
+
+
+
